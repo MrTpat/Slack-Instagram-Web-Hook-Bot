@@ -57,6 +57,7 @@ app.get('/callback', async (req, res) => {
 
     const token = oauth2.accessToken.create(result);
     console.log(token.token.access_token)
+    res.status(200).send(result)
   } catch (error) {
     console.error('Access Token Error', error.message);
     return res.status(400).json('Authentication failed');
