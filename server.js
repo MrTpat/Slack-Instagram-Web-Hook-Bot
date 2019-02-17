@@ -33,7 +33,7 @@ const oauth2 = simpleOauthModule.create({
 
 // Authorization uri definition
 const authorizationUri = oauth2.authorizationCode.authorizeURL({
-  redirect_uri: 'https://fantasynamegeneratorbackend.herokuapp.com/callback',
+  redirect_uri: 'https://jhacksslackbackend.herokuapp.com/callback',
   scope: 'chat:write:bot',
   state: '3(#0/!~',
 });
@@ -48,7 +48,7 @@ app.get('/callback', async (req, res) => {
   const code = req.query.code;
   const options = {
     code: code,
-    redirect_uri: "https://fantasynamegeneratorbackend.herokuapp.com/callback"
+    redirect_uri: "https://jhacksslackbackend.herokuapp.com/callback"
   };
   try {
     const result = await oauth2.authorizationCode.getToken(options);
