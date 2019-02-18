@@ -1,5 +1,5 @@
 # Slack-Instagram-Web-Hook-Bot
-Slack instagram web hook bot. Talks in the chat whenever a new instagram post is posted with the specified tag.
+Slack instagram web hook bot. Posts in the chat whenever a new instagram post is posted with a specified hashtag.Useful for hackathons and other events where people want to monitor when new posts are posted with a specific hashtag.
 Uses:
 -Python
 -Slack API
